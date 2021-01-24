@@ -3,7 +3,7 @@ module Resources::V1
         resource :users do
             desc 'user list'
             get do
-                present User.all
+                present User.all, with: Entities::V1::UserEntity
             end
 
             desc 'user'
@@ -11,7 +11,7 @@ module Resources::V1
                 requires :id, type: Integer, desc: 'user id'
             end
             get ':id' do
-                present User.find(params[:id])
+                present User.find(params[:id]), with: Entities::V1::UserEntity
             end
         end
     end
