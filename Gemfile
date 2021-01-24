@@ -5,6 +5,13 @@ ruby '2.7.2'
 
 gem 'grape'
 gem 'grape-entity'
+gem 'grape_logging'
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
+# markdown
+gem 'redcarpet'
+# highlight for markdown
+gem 'rouge'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
