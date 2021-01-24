@@ -1,5 +1,5 @@
 class Api < Grape::API
     prefix 'api'
 
-    mount V1::Root
+    mount Resources::V1::Root
 end

@@ -1,4 +1,4 @@
-module V1
+module Resources::V1
     class Root < Grape::API
         version 'v1'
         format :json

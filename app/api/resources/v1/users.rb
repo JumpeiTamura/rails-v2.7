@@ -1,4 +1,4 @@
-module V1
+module Resources::V1
     class Users < Grape::API
         resource :users do
             desc 'user list'
